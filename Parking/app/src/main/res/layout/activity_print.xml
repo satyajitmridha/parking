@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PrintActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_margin="20dp"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/rounded_corner_filter"
+            android:paddingRight="5dp">
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_btn"
+                android:text="@string/btnSearch"
+                android:textColor="@color/text_white"/>
+            <include
+                android:id="@+id/progress_bar"
+                layout="@layout/progressbar"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvcno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car Number :"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:id="@+id/tvserial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Serial :"
+                    android:layout_alignParentEnd="true"
+
+                    android:textColor="#000"
+                    android:gravity="center"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvCarDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car Type"
+                android:textColor="#000"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/orderdetailscarttotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash Collected :"
+                android:textColor="#000"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/cno"
+                    android:layout_width="0dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btnSend"
+                    android:inputType="textCapCharacters"
+                    android:background="@drawable/rounded_corner_filter"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="0dp"/>
+                <Button
+                    android:id="@+id/finnd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/selector_btn"
+                    android:text="Find Bill"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_white"
+                    android:layout_marginBottom="4dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn"
+                    android:text="@string/btnSend"
+                    android:textColor="@color/text_white"
+                    android:layout_marginBottom="4dp"/>
+                <Button
+                    android:id="@+id/btnShareBill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/selector_btn"
+                    android:text="Share Bill"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_white"
+                    android:layout_marginBottom="4dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <!--   <include layout="@layout/deliveredotp"
+                   android:id="@+id/viewotpsubmit"
+                   android:visibility="gone"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

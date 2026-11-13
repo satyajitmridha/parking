@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner_filter"
+    tools:context=".activity.CarEntryActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_filter"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/CarEntry"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp"
+            android:background="@drawable/rounded_corner_filter"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_corner_filter"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/entry_carnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/carnumber"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:inputType="textCapCharacters"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_corner_filter"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/entry_carnumber_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:hint="@string/carnumber"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_corner_filter">
+
+            <EditText
+                android:id="@+id/car_entry_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:digits="0123456789"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/mobileNumber"
+                android:inputType="number"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_corner_filter">
+
+            <EditText
+                android:id="@+id/car_entry_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:digits="0123456789"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/date"
+                android:inputType="date"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:clickable="false"
+                android:enabled="false"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_corner_filter">
+
+            <EditText
+                android:id="@+id/car_entry_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:digits="0123456789"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/time"
+                android:inputType="number"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_corner_filter">
+
+            <Spinner
+                android:id="@+id/cart_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textAlignment="textStart"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/colorPrimaryDark" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_corner_filter">
+
+            <Spinner
+                android:id="@+id/car_load_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textAlignment="textStart"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btnCarSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_rounded_button"
+            android:padding="3dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_rounded_button"
+            android:padding="3dp"
+            android:text="@string/print"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/progressbar"
+        android:visibility="gone" />
+</RelativeLayout>

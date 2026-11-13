@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Change Password"
+        android:background="@drawable/rounded_corner_filter"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Enter New Password"/>
+    <EditText
+        android:id="@+id/pas"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="password"
+        android:background="@drawable/rounded_corner_filter"
+        android:layout_marginBottom="25dp"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/cng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:background="@drawable/bg_rounded_button"/>
+
+</LinearLayout>

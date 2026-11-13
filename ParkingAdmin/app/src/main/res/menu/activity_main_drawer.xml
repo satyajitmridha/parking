@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_male"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_new_user"
+            android:icon="@drawable/ic_male"
+            android:title="Add User" />
+        <item
+            android:id="@+id/nav_car_type"
+            android:icon="@drawable/ic_baseline_directions_bus_24"
+            android:title="Add Car Type" />
+        <item
+            android:id="@+id/nav_car_type_price"
+            android:icon="@drawable/ic_baseline_directions_bus_24"
+            android:title="Set Price" />
+    </group>
+
+</menu>

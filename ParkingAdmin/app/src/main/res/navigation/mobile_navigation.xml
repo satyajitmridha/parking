@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.plabon.parkingadmin.activity.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.plabon.parkingadmin.activity.ui.gallery.GalleryFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_new_user"
+        android:name="com.plabon.parkingadmin.activity.ui.newuser.NewuserFragment"
+        android:label="@string/menu_newuser"
+        tools:layout="@layout/fragment_newuser" />
+    <fragment
+        android:id="@+id/nav_car_type"
+        android:name="com.plabon.parkingadmin.activity.ui.cartype.CartypeFragment"
+        android:label="@string/menu_cartype"
+        tools:layout="@layout/fragment_cartype" />
+    <fragment
+        android:id="@+id/nav_car_type_price"
+        android:name="com.plabon.parkingadmin.activity.ui.setprice.SetPriceFragment"
+        android:label="Set Price"
+        tools:layout="@layout/fragment_setprice" />
+
+</navigation>
